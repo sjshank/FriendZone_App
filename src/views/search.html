@@ -1,0 +1,30 @@
+<div class="container">
+	<app-header selected="search"></app-header>
+	
+	<!-- To display error message -->
+    <div ng-if="hasError">
+        <ng-include src="'error.tpl.html'" ></ng-include>
+    </div>
+
+	<div class="search">
+		 <div class="wrapper">
+	         
+			 <div class="home-container">
+				<div class="previous">
+					<a href="#/">back to Search</a>
+				</div>
+				<section>
+					<ng-include src="'views/leftNavigation.tpl.html'"></ng-include>
+					<div class="middle-box" >
+						<div class="search-result" >
+							<ul ng-hide="userList.length == 0" ngrender-Users users = "userList"></ul>
+						</div>
+					</div>
+					<div class="right-box">
+					</div>
+				</section>
+			 </div>
+		 </div>
+		 <ng-include src="'views/footer.tpl.html'" ></ng-include>
+ 	</div>
+</div>
