@@ -1,0 +1,17 @@
+{
+  "name": "FriendZone_application",
+  "version": "1.0.0",
+  "description": "An AngularJS framework based web application to find people and add yourself in your location.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Saurabh Shankariya",
+  "license": "GNU",
+  "dependencies": {
+    "angular": "^1.2.29",
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "jsonfile": "^2.2.3"
+  }
+}

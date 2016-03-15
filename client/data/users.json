@@ -1,0 +1,88 @@
+{
+  "data": [
+    {
+      "picUrl": "images/a.png",
+      "name": "Saurabh",
+      "rStatus": "Single",
+      "hobby": "Movie Making",
+      "age": "25",
+      "gender": "Male",
+      "location": {
+        "state": "Maharashtra",
+        "city": "Nagpur"
+      }
+    },
+    {
+      "picUrl": "images/a.png",
+      "name": "Nilesh",
+      "rStatus": "Married",
+      "hobby": "Reading",
+      "age": "25",
+      "gender": "Male",
+      "location": {
+        "state": "Maharashtra",
+        "city": "Mumbai"
+      }
+    },
+    {
+      "picUrl": "images/a.png",
+      "name": "Sujal",
+      "rStatus": "Single",
+      "hobby": "Singing",
+      "age": "25",
+      "gender": "Male",
+      "location": {
+        "state": "Gujarat",
+        "city": "Surat"
+      }
+    },
+    {
+      "picUrl": "images/a.png",
+      "name": "Rohan",
+      "rStatus": "Married",
+      "hobby": "Playing Cricket",
+      "age": "25",
+      "gender": "Male",
+      "location": {
+        "state": "Maharashtra",
+        "city": "Mumbai"
+      }
+    },
+    {
+      "picUrl": "images/a.png",
+      "name": "Paltu",
+      "rStatus": "Single",
+      "hobby": "Video Editing",
+      "age": "25",
+      "gender": "Male",
+      "location": {
+        "state": "Maharashtra",
+        "city": "Nagpur"
+      }
+    },
+    {
+      "picUrl": "images/a.png",
+      "name": "g",
+      "rStatus": "Single",
+      "hobby": "dffd",
+      "age": "34",
+      "gender": "male",
+      "location": {
+        "state": "dgvs",
+        "city": "NGP"
+      }
+    },
+    {
+      "picUrl": "images/a.png",
+      "name": "Saurabh",
+      "rStatus": "Married",
+      "hobby": "Movie",
+      "age": "34",
+      "gender": "male",
+      "location": {
+        "state": "MAH",
+        "city": "NGP"
+      }
+    }
+  ]
+}
