@@ -1,0 +1,88 @@
+{
+  "data": [
+    {
+      "picUrl": "images/1458221691850_Koala.jpg",
+      "name": "Saurabh",
+      "rStatus": "Single",
+      "hobby": "Movie Making",
+      "age": "25",
+      "gender": "male",
+      "location": {
+        "state": "Maharashtra",
+        "city": "Nagpur"
+      }
+    },
+    {
+      "picUrl": "images/1458221736919_Penguins.jpg",
+      "name": "Shankariya",
+      "rStatus": "Single",
+      "hobby": "Sound Editting",
+      "age": "25",
+      "gender": "male",
+      "location": {
+        "state": "Telangana",
+        "city": "Hyderabad"
+      }
+    },
+    {
+      "picUrl": "images/1458221792096_Tulips.jpg",
+      "name": "Rohan",
+      "rStatus": "Married",
+      "hobby": "Cricket",
+      "age": "28",
+      "gender": "male",
+      "location": {
+        "state": "Karnataka",
+        "city": "Udupi"
+      }
+    },
+    {
+      "picUrl": "images/1458221847225_Hydrangeas.jpg",
+      "name": "Nilesh",
+      "rStatus": "Single",
+      "hobby": "Table Tennis",
+      "age": "26",
+      "gender": "male",
+      "location": {
+        "state": "Maharashtra",
+        "city": "Mumbai"
+      }
+    },
+    {
+      "picUrl": "images/1458222065838_Chrysanthemum.jpg",
+      "name": "Sujal",
+      "rStatus": "Divorce",
+      "hobby": "Eating",
+      "age": "27",
+      "gender": "male",
+      "location": {
+        "state": "Gujarat",
+        "city": "Surat"
+      }
+    },
+    {
+      "picUrl": "images/1458222300037_Jellyfish.jpg",
+      "name": "Paltu",
+      "rStatus": "Single",
+      "hobby": "Video Editing",
+      "age": "25",
+      "gender": "male",
+      "location": {
+        "state": "Maharashtra",
+        "city": "Nagpur"
+      }
+    },
+    {
+      "picUrl": "images/1458223924009_Desert.jpg",
+      "name": "Animesh",
+      "rStatus": "Single",
+      "hobby": "Sleeping",
+      "age": "25",
+      "gender": "male",
+      "location": {
+        "state": "West Bengal",
+        "city": "Kolkata"
+      }
+    }
+  ]
+}

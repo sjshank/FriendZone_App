@@ -1,0 +1,36 @@
+<li ng-repeat="user in users | filter : user.name ">
+	<div class="profile-pic">
+			<a href="">
+				<img src="{{user.picUrl}}" class="profileImage">
+			</a>
+			<em>&nbsp;</em>
+		</div>
+		<div class="user-details">
+			<h3 class="verified">{{user.name}}</h3>
+			<p class="personality"><strong>Relationship : </strong>{{user.rStatus}}</p>
+			<p><strong>Hobby : </strong>{{user.hobby}}</p>
+		</div>
+		<div class="detail-right-box">
+			<div class="user-spec">
+				<label>
+					<ul>
+						<li class="gen-age">{{user.gender}}, {{user.age}}</li>
+						<li class="marital-stat">{{user.rStatus}}</li>
+					</ul>
+				</label>
+				<label>
+					<ul>
+						<li class="location">{{user.location.city}}, {{user.location.state}}</li>
+						<li class="for-stat">Here for Friendship</li>
+					</ul>
+				</label>
+			</div>
+			<div class="bottom-detail">
+				<ul>
+					<li><a href="">Call</a></li>
+					<li><a href="">Message</a></li>
+					<li class="star active"></li>
+				</ul>
+			</div>
+	</div>
+</li>

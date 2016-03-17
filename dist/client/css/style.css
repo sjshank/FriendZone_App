@@ -1,0 +1,692 @@
+
+h1 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.signup-form {
+    border: 2px solid activeborder;
+    border-radius: 4px;
+    margin-left: 36%;
+    padding: 30px;
+    width: 30%;
+}
+.textAlign-center {
+    text-align: center;
+}
+.errorTxt {
+  color: red;
+  font-size: 12px;
+}
+.profileImage {
+  border-radius: 15px;
+  height: 151px;
+  width: 151px;
+}
+
+
+
+
+@font-face {
+    font-family: 'MyriadProLight';
+    src: url('myriadpro-light-webfont.eot');
+    src: url('myriadpro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('myriadpro-light-webfont.woff') format('woff'),
+         url('myriadpro-light-webfont.ttf') format('truetype'),
+         url('myriadpro-light-webfont.svg#MyriadProLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadProBold';
+    src: url('myriadpro-bold-webfont.eot');
+    src: url('myriadpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('myriadpro-bold-webfont.woff') format('woff'),
+         url('myriadpro-bold-webfont.ttf') format('truetype'),
+         url('myriadpro-bold-webfont.svg#MyriadProBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadProRegular';
+    src: url('myriadpro-regular-webfont.eot');
+    src: url('myriadpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('myriadpro-regular-webfont.woff') format('woff'),
+         url('myriadpro-regular-webfont.ttf') format('truetype'),
+         url('myriadpro-regular-webfont.svg#') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadProSemibold';
+    src: url('myriadpro-semibold-webfont.eot');
+    src: url('myriadpro-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('myriadpro-semibold-webfont.woff') format('woff'),
+         url('myriadpro-semibold-webfont.ttf') format('truetype'),
+         url('myriadpro-semibold-webfont.svg#MyriadProSemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MyriadProBlack';
+    src: url('myriadpro-black-webfont.eot');
+    src: url('myriadpro-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('myriadpro-black-webfont.woff') format('woff'),
+         url('myriadpro-black-webfont.ttf') format('truetype'),
+         url('myriadpro-black-webfont.svg#MyriadProBlack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+  width:100%;
+}
+body{
+    margin:0px;
+    padding:0px;
+    background:#e7e9ec;
+    font-family: "MyriadProLight";
+  width:100%;
+  min-width:1257px;
+}
+textarea, input, select { outline: none; }
+.wrapper{
+    margin:0px;
+    padding:0px;
+}
+header{
+    box-shadow:0px 5px 6px -2px #ccc;
+}
+.container{
+    margin:auto;
+    padding:0px;
+}
+.main-container{
+    margin:auto;
+    padding:0px;
+    width:1057px;
+}
+.top-head{
+    background:#6e5786;
+    padding:3px 0px;
+  width:100%;
+}
+.narrow{
+    display:block;
+    width:1257px;
+    margin:auto;
+}
+.top-head-list ul{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+}
+.top-head-list ul li{
+    float:left;
+    position:relative;
+    display:block;
+}
+.top-head-list ul li.select{
+    margin-top:3px;
+    margin-left:180px;
+}
+.top-head-list ul li.select select{
+    border:0px;
+    border-radius:5px;
+    width:273px;
+    padding:6px 3px;
+  margin-top:3px;
+    -webkit-appearance: none;       
+    -moz-appearance: none;    
+    appearance: none;
+    background: rgba(255, 255, 255, 1) url("../images/drop-down-trngle.svg") no-repeat scroll 257px center;
+    background-size:8px 7px;
+}
+.top-head-list ul li.profile{
+    float:right;
+    margin-top:9px;
+    display:block;
+}
+li.profile a{
+    text-decoration:none;
+    color:#fff;
+}
+
+li.profile h3{
+    color:#fff;
+    float:left;
+    margin:0px;
+    padding:0px;
+    font-size:18px;
+    line-height:24px;
+    margin-right:5px;
+    font-family:"MyriadProLight";
+    letter-spacing:0.5px;
+    display:inline-block;
+}
+li.profile img{
+    float:left;
+    border-radius:3px;
+    display:inline-block;
+}
+.head-below{
+    background:#9375af;
+  width:100%;
+    padding:6px 0px;
+    display:block;
+}
+.notification-bar{
+    float:right;
+  margin-right:100px;
+}
+
+.notification-bar ul{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+.notification-bar ul li{
+    float:left;
+    margin-left:50px;
+}
+
+.notification-bar ul li a{
+    display:block;
+    width:40px;
+    height:33px;
+}
+.notification-bar ul li a.view{
+    background:url("../images/views-nw.png")no-repeat scroll center center;
+    background-size:37px;
+}
+.notification-bar ul li a.ring{
+    background:url("../images/notifications-nw.png")no-repeat scroll center center;
+    background-size:21px;
+}
+.notification-bar ul li a.notification{
+    background:url("../images/messages-nw.png")no-repeat scroll center center;
+    background-size:25px;
+}
+.notification-bar ul li a.heart{
+    background:url("../images/likes.png")no-repeat scroll center center;
+    background-size:24px;
+}
+.main{
+    display:block;
+    margin-top:45px;
+    padding:24px 80px 38px 80px;
+    background:#fff;
+    box-shadow:-1px 4px 3px 0px #979797;
+}
+
+
+/*-------------------------Search Page Starts Here----------------------*/
+
+.search{
+  font-family: "MyriadProLight";
+}
+.logo > a {
+  color: #fff;
+  font-size: 23px;
+  text-decoration: none;
+}
+.search .home-container{
+  font-family: "MyriadProLight";
+  background:#e7e9ec;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  width:1257px;
+  padding-bottom:68px;
+  margin:auto;
+}
+
+.previous{
+  display:block;
+  margin:24px 0px;
+  padding:0px;
+}
+
+.previous a{
+  background: rgba(0, 0, 0, 0) url("../images/backtosearch.png") no-repeat scroll left center;
+  color: #000;
+  font-size: 22px;
+  padding: 3px 0 3px 64px;
+  text-decoration: none;
+}
+
+.search section > div{
+  float:left;
+}
+
+.left-box{
+  margin:0px;
+  padding:0px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  width:225px;
+  float:left;
+}
+
+nav{
+  width:100%;
+}
+
+nav ul{
+  margin:0px;
+  padding:0px;
+  list-style:none;
+}
+
+nav ul li{
+  margin-top:5px;
+}
+
+nav ul li:first-child{
+  margin-top:0px;
+}
+
+nav ul li a{
+  display: block;
+  padding:23px 0px 23px 80px;
+  text-decoration: none;
+  box-shadow:-1px 1px 1px 0px #b2b2b2;
+}
+
+nav ul li a p{
+  color: #000;
+  font-size: 19px;
+  margin: 0;
+  font-family: 'MyriadProRegular';
+}
+
+nav ul li a.modify-search{
+  background:#fff url("../images/search.png") no-repeat scroll 24px center;
+}
+nav ul li a.nearme{
+  background:#fff url("../images/nearme.png") no-repeat scroll 11px center;
+}
+nav ul li a.nudge{
+  background:#fff url("../images/nudge.png") no-repeat scroll 16px center;
+}
+nav ul li a.message{
+  background:#fff url("../images/message.png") no-repeat scroll 23px center;
+}
+nav ul li a.blinddate{
+  background:#fff url("../images/blinddate.png") no-repeat scroll 24px center;
+}
+nav ul li a.bookmarks{
+  background:#fff url("../images/bookmarks.png") no-repeat scroll 16px center;
+}
+nav ul li a.report-an-issue{
+  background:#fff url("../images/report.png") no-repeat scroll 21px center;
+}
+
+.middle-box{
+  width:792px;
+  margin-left:16px;
+  float:left;
+}
+.search-result{
+  margin:0px;
+  padding:0px;
+}
+
+.search-result > ul{
+  margin:0px;
+  padding:0px;
+  list-style:none;
+}
+
+.search-result > ul > li{
+  width:100%;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+  padding:15px 15px 0px 15px;
+  display:block;
+  background:#fff;
+  box-shadow:0px 2px 4px 0px #b2b2b2;
+  margin-top:15px;
+}
+
+.search-result > ul > li:first-child{
+  margin-top:0px;
+}
+
+.profile-pic{
+  float: left;
+  font-size: 13px;
+  text-align: center;
+  margin-right:30px;
+}
+.profile-pic a{
+  display:block;
+  text-decoration:none;
+  margin-bottom:2px;
+}
+
+.profile-pic em {
+  display: block;
+  margin-bottom: 3px;
+  font-family:'MyriadProRegular';
+}
+
+.user-details{
+  float:left;
+}
+
+.user-details h3{
+  text-align:left;
+  margin:0px 0px 76px;
+  font-family:'MyriadProRegular';
+  font-weight:normal;
+  font-size:24px;
+  display:inline-block;
+}
+.user-details h3.verified{
+  padding-right:35px;
+  background:url("../images/verified.png") no-repeat scroll right center;
+}
+
+.user-details p{
+  font-size:16px;
+  margin:0px;
+}
+.user-details p.personality{
+  margin-bottom:10px;
+}
+.user-details p strong{
+
+}
+.detail-right-box{
+  float:right;
+}
+.user-spec{
+  padding:7px 0px 7px 50px;
+  border-left:1px solid #acacac;
+}
+
+.user-spec label{
+  margin:0px;
+  padding:0px;
+  float:left;
+}
+
+.user-spec label ul{
+  margin:0px;
+  padding:0px;
+  list-style:none;
+}
+
+.user-spec label ul li{
+  padding:0px;
+  width:auto;
+  background:none;
+  padding-left: 24px;
+  line-height: 24px;
+}
+.user-spec label ul li:first-child{
+  margin-bottom:10px;
+}
+
+.user-spec label ul li.gen-age{
+  background: rgba(0, 0, 0, 0) url("../images/gender.png") no-repeat scroll left 1px;
+}
+.user-spec label ul li.marital-stat{
+  background: rgba(0, 0, 0, 0) url("../images/status.png") no-repeat scroll left 7px;
+  line-height: 31px;
+}
+.user-spec label ul li.location{
+  background: rgba(0, 0, 0, 0) url("../images/location.png") no-repeat scroll left 3px;
+  margin-top:0px;
+}
+.user-spec label ul li.for-stat{
+  background: rgba(0, 0, 0, 0) url("../images/preference.png") no-repeat scroll left 1px;
+  line-height: 31px;
+  padding-left:30px;
+}
+
+.user-spec label:first-child {
+  margin-right: 15px;
+}
+
+.bottom-detail{
+  margin-top:52px;
+  padding-left:50px;
+}
+
+.bottom-detail ul{
+  margin:0px;
+  padding:0px;
+  list-style:none;
+}
+
+.bottom-detail ul li{
+  float:left;
+  margin-left:35px;
+}
+
+.bottom-detail ul li:first-child{
+  margin-left:0px;
+}
+
+.bottom-detail ul li a{
+  display:block;
+  padding:5px 8px;
+  color:#6b6b6b;
+  border:1px solid #8f8f90;
+  border-radius:5px;
+  text-decoration:none;
+}
+.bottom-detail ul li.star{
+  display:block;
+  background:url("../images/bookmark.png")no-repeat;
+  width:20px;
+  height:19px;
+  margin-top:5px;
+  cursor:pointer;
+  margin-left:50px;
+}
+
+.bottom-detail ul li.star.active{
+  display:block;
+  background:url("../images/star.png")no-repeat;
+  width:20px;
+  height:19px;
+  margin-top:5px;
+  cursor:pointer;
+  margin-left:50px;
+}
+
+.right-box{
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 2px 4px 0 #b2b2b2;
+  display: block;
+  height: 500px;
+  margin-left: 16px;
+  width: 208px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.search section{
+  position:relative;
+}
+
+.search footer{
+  width:100%;
+  border-top:1px solid #acacac;
+  background:none;
+  padding:20px;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.search footer h3{
+  text-align:center;
+  font-weight:normal;
+  color:#acacac;
+  font-size:16px;
+}
+
+.search footer div{
+  margin: auto;
+  width: 615px;
+}
+
+.search footer div ul{
+  margin:0px;
+  padding:0px;
+  list-style:none;
+}
+
+.search footer div ul li{
+  float:left;
+  border-left:1px solid #acacac;
+  padding:0px 20px;
+}
+
+.search footer div ul li:first-child{
+  border:0px;
+}
+
+.search footer div ul li a{
+  text-decoration:none;
+  color:#acacac;
+  font-family:'MyriadProRegular';
+}
+
+.ad-top{
+  padding:19px 13px 6px 13px;
+  border-bottom:1px solid #d7d7d7;
+}
+
+.ad-top ul{
+  list-style:none;
+  margin:0px;
+  padding:0px;
+}
+
+.ad-top ul li{
+  float:right;
+  color:#808080;
+  font-family:'MyriadProBold';
+  font-size:12px;
+}
+
+.ad-top ul li:first-child{
+  float:left;
+}
+
+.block-box{
+  overflow-y:scroll;
+  height:50px;
+}
+
+.block-box .first{
+  display:block;
+  padding:13px 26px;
+  border-bottom:1px solid #d7d7d7;
+}
+
+.block-box .first:hover{
+  background:#f5f5f5;
+  -webkit-transition:0.2s;
+  -moz-transition:0.2s;
+  -o-transition:0.2s;
+  transition:0.2s;
+}
+.block-box .first a{
+  display:block;
+  text-decoration:none;
+}
+.block-box .first img{
+  float:left;
+}
+
+.block-box .first .name{
+  float:left;
+  margin-left:24px;
+  margin-top:8px;
+}
+
+.block-box .first .name h4{
+  color: #000;
+  font-family: "MyriadProRegular";
+  font-size: 15px;
+  margin: 0;
+  text-decoration: none;
+}
+
+.block-box .first .name p{
+  background: rgba(0, 0, 0, 0) url("../images/gender_small.png") no-repeat scroll left center;
+  font-size: 11px;
+  margin: 8px 0 0;
+  padding-left: 14px;
+  padding-top: 2px;
+  color:#000;
+}
+
+.block-box {
+  height: 170px;
+  overflow-y: scroll;
+}
+
+.scrollbox {
+  background-color: #fff;
+  border-bottom: 1px solid #c5c5c5;
+  overflow: auto;
+  padding: 0 !important;
+  width: auto !important;
+}
+
+.vertical-track {
+  width: 6px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  -webkit-border-radius: 11px;
+  border-radius: 11px;
+  background:#d3d3d3;
+}
+
+.vertical-handle {
+  width: 6px;
+  -webkit-border-radius: 11px;
+  border-radius: 11px;
+  background:#818389;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+.need-help{
+  display:block;
+  padding: 19px 13px 6px;
+}
+.need-help p{
+  color: #808080;
+  font-family: "MyriadProBold";
+  font-size: 12px;
+}
+.need-help .selected{
+  border: 1px solid #868788;
+  border-radius: 5px;
+  height: 40px;
+}
+
+/*-------------------------Search Page Ends Here----------------------*/
+
+
+
+wrapper:after,.top-head:after,.top-head-list:after,.container:after,.narrow:after,.head-below:after,.main:after,.bar:after,.status:after,.upload-pic:after,.signup-bottom:after,.bottom-btn:after,.signup-bottom > div:after,.for > div:after,.looking-for:after,.interest:after,.int-list:after,.signup-btn:after,header:after,.banner:after,.home-container:after,.signup-box:after,.join-us:after,.right-signup ul li span, section:after,.social-links:after,.previous:after,nav ul li:after,.search-result > ul > li:after,.user-spec:after,.bottom-detail:after,.bottom-links:after,.ad-top:after,.block-box:after,.first:after,.need-help:after,.min-max-val:after,.top-profile:after,.right-comn:after,.person-details:after,.profile-details:after,.more-pic-slide:after,.more-pic-slide ul:after,.nudge:after,.report:after,.send-space:after,.interests:after,.privacy-head:after,.couple:after,.small-thumb:after{
+    content:'';
+    position:relative;
+    clear:both;
+    height:0;
+    display:block;
+}
