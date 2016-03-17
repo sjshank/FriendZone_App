@@ -39,7 +39,10 @@ Steps to follow for running app :
 
     1. install Nodejs from here https://nodejs.org/en/ and make node env up. This will automatically install NPM package in 		your system.
     2. Install Python 2.7+ version from here https://www.python.org/download/releases/2.7/
-    3. Run 'npm install' on 'package.json'. This will create new folder 'node_modules' inside same directory where you can see       all the mentioned dependencies inside 'package.json' will gets installed
-    4. Run either 'grunt' or 'node app.js' over root directory. 'grunt' command will execute all the task mentioned inside           'gruntfile.js'.
+    3. Run 'npm install' on 'package.json'. This will create new folder 'node_modules' 
+    inside same directory where you can see all the mentioned dependencies inside
+    'package.json' will gets installed.
+    4. Run either 'grunt' or 'node app.js' over root directory.
+    'grunt' command will execute all the task mentioned inside 'gruntfile.js'.
     
     Hit "localhost:4000" to see running application
