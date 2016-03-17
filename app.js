@@ -6,11 +6,15 @@ var express = require('express'),
 	bodyParser = require('body-parser'),
 	fController = require('./server/controller/friendzoneCtrl'),
 	multer  = require('multer'),
+	log4js = require('log4js'),
+	debug = require('debug')('app'),
 	app = express();
 
 const dest = './client/images/';
 
 var server = require('./server')(app);
+
+var log = log4js.getLogger("app");
 
 /*
 *	Configuring multer for acessing form data and file name/upload in a specific destination.

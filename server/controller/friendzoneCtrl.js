@@ -1,10 +1,11 @@
 var jsonfile = require("jsonfile"),
 	path = require("path"),
 	userFactory = require('../helper/userFactory')(),
+	log = require('log4js').getLogger("index"),
 	fileName = './client/data/users.json';
 
 exports.saveUser = function (req, res) {
-
+	log.debug("This is in the friendzone controller module");
 	if(req.body && Object.keys(req.body).length !== 0 && req.file && Object.keys(req.file).length !== 0){
 		var userJson = getUsers();
 		if(userJson.data){
