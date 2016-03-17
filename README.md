@@ -9,6 +9,12 @@ An AngularJS framework based web application to find people and add yourself in 
 	request which contains file and fields object.
 	At service side, I have used 'MULTER' module for storing images inside 'images' folder.
 	
+	
+	It also contains logger implementation for logging error, info using 'Debug' and 'Log4js' module.
+	It has 'Log4js.json' file for logging configuration.
+	Application logs all details inside 'log' folder.
+	
+	
 	It also contains commented out code for HTML5 local-storage for 
 	storing/retrieving user details from localStorage.
 	
@@ -30,6 +36,7 @@ Libraries :
 
     1. fs - to read/write data in .json file
     2. multer - file upload at server side
+    3. debug/log4js - For logging errors, information
     
 Tools :
 
