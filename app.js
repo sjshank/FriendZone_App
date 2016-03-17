@@ -30,6 +30,7 @@ var upload = multer({ storage: storage });
 *	Built-in middleware express.static for making files such as images/css/js accessable
 */
 	app.use(express.static('client/'));
+	app.use(express.static('dist/'));
 	app.use(express.static('node_modules'));
 	
 	app.use(bodyParser.json());

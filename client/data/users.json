@@ -71,6 +71,18 @@
         "state": "Maharashtra",
         "city": "Nagpur"
       }
+    },
+    {
+      "picUrl": "images/1458223924009_Desert.jpg",
+      "name": "Animesh",
+      "rStatus": "Single",
+      "hobby": "Sleeping",
+      "age": "25",
+      "gender": "male",
+      "location": {
+        "state": "West Bengal",
+        "city": "Kolkata"
+      }
     }
   ]
 }
