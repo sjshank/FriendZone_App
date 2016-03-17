@@ -18,7 +18,7 @@ angular.module('webApp')
 })
 
 //directive for file upload
-.directive('ngfileModel', ['$parse', function ($parse) {
+/*.directive('ngfileModel', ['$parse', function ($parse) {
     return {
         restrict: 'A',
         link: function(scope, element, attrs) {
@@ -32,4 +32,19 @@ angular.module('webApp')
             });
         }
     };
-}]);
+}]);*/
+
+.directive('file', function () {
+    return {
+        scope: {
+            file: '='
+        },
+        link: function (scope, el, attrs) {
+            el.bind('change', function (event) {
+                var file = event.target.files[0];
+                scope.file = file ? file : undefined;
+                scope.$apply();
+            });
+        }
+    };
+});

@@ -29,7 +29,7 @@ angular.module('webApp')
                     $scope.errorMsg = constants.SERVICE_ERROR;
                 }*/
             }catch(e){
-                console.log("Exception occurs while rendering user list");
+                console.log("Exception occurs while rendering user list", e);
             }
         })();
         

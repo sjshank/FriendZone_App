@@ -16,7 +16,7 @@
             </div></br>
             <div class="form-group">
                  <label for="name">Profile Picture</label></br>
-                 <input type="file" ngfile-Model="user.profilePic"/>
+                 <input type="file" file="file" required />
             </div>
             <div class="form-group">
                 <label for="name">Name</label>
@@ -53,12 +53,12 @@
             <div class="form-group">
                 <label for="age">Location</label>
                 <div>
-                    State <input type="text" class="form-control" maxLength="15" ng-model="user.location.state" name="state" placeholder="Enter your state" alphatextbox>
+                    State <input type="text" class="form-control" maxLength="15" ng-model="user.state" name="state" placeholder="Enter your state" alphatextbox>
                     <small class="errorTxt" ng-if="signupForm.state.$dirty && signupForm.state.$error.alphatextbox">{{ STATE_ERR }}</small>
                 </div>
                 <div ng-if="isStatePopulated">
                 </br>
-                    City<input type="text" class="form-control" maxLength="15" ng-model="user.location.city" name="city" placeholder="Enter your city" alphatextbox>
+                    City<input type="text" class="form-control" maxLength="15" ng-model="user.city" name="city" placeholder="Enter your city" alphatextbox>
                     <small class="errorTxt" ng-if="signupForm.city.$dirty && signupForm.city.$error.alphatextbox">{{ CITY_ERR }}</small>
                 </div>
             </div>        

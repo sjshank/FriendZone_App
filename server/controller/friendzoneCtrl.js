@@ -1,12 +1,15 @@
 var jsonfile = require("jsonfile"),
 	path = require("path"),
+	userFactory = require('../helper/userFactory')(),
 	fileName = './client/data/users.json';
 
 exports.saveUser = function (req, res) {
-	if(req.body && Object.keys(req.body).length !== 0){
+
+	if(req.body && Object.keys(req.body).length !== 0 && req.file && Object.keys(req.file).length !== 0){
 		var userJson = getUsers();
 		if(userJson.data){
-			userJson.data.push(req.body);
+			userFactory.setUserObject(req.body, req.file);
+			userJson.data.push(userFactory.getUserObject());
 			jsonfile.writeFile(fileName, userJson, {spaces: 2}, function(err, result) {
 	  			if(err){
 	  				console.log("Error while writing json file", err);
@@ -19,7 +22,7 @@ exports.saveUser = function (req, res) {
 			res.status(404).json({errMsg : "File not found"});	
 		}
 	}else{
-		res.status(500).json({errMsg : "Request body is empty"});
+		res.status(500).json({errMsg : "Request is empty"});
 	}
 };
 
@@ -34,12 +37,16 @@ exports.retrieveUsers = function (req, res) {
 
 
 function getUsers(){
-	var fileData = jsonfile.readFileSync(fileName);
-  			if(!fileData){
-  				return {
-  					errMsg : "Service is temporarily unavailable. Please try after sometime."
-  				};
-  			}else{
-  				return fileData;
-  			}
+	try{
+		var fileData = jsonfile.readFileSync(fileName);
+	  			if(!fileData){
+	  				return {
+	  					errMsg : "Service is temporarily unavailable. Please try after sometime."
+	  				};
+	  			}else{
+	  				return fileData;
+	  			}
+	}catch(e){
+		console.log("Error occurred while reading file", e);
+	}
 };

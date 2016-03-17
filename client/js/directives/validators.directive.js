@@ -8,7 +8,7 @@ angular.module('webApp')
         restrict: "A",
         require: "?ngModel",
         link: function (scope, element, attributes, ngModel) {
-            var ALPHA_REGEXP = /^[a-zA-Z]*$/;
+            var ALPHA_REGEXP = /^[a-zA-Z_ ]*$/;
             ngModel.$validators.alphatextbox = function (val) {
                 if (typeof val === 'undefined' || val === "" || (!ALPHA_REGEXP.test(val))) {
                     return false;

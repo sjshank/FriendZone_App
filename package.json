@@ -12,6 +12,8 @@
     "angular": "^1.2.29",
     "body-parser": "^1.14.1",
     "express": "^4.13.3",
-    "jsonfile": "^2.2.3"
+    "formidable": "^1.0.17",
+    "jsonfile": "^2.2.3",
+    "multer": "^1.1.0"
   }
 }

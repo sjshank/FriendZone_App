@@ -22,18 +22,34 @@ angular.module('webApp')
     .factory('appNodeService', ['$q', '$http', 'SERVICEURL', function($q, $http, url) {
         
         return new function() {
-            this.doSignup = function(data) {
-                var deferred = $q.defer();
-                $http.post(url, data).
-                    success(function(data, status, headers, config) {
-                        deferred.resolve(data);
-                    }).
-                    error(function(data, status, headers, config) {
-                        deferred.reject([data, status, headers, config]);
-                    });
-                return deferred.promise;
-            };
+            this.doSignup = function(formData) {
+                var headerConfig = {
+                                headers: {
+                                    'Content-Type': 'multipart/form-data'
+                                },
+                                transformRequest: function (data, headersGetter) {
+                                    var formData = new FormData();
+                                    angular.forEach(data, function (value, key) {
+                                        formData.append(key, value);
+                                    });
 
+                                    var headers = headersGetter();
+                                    delete headers['Content-Type'];
+
+                                    return formData;
+                                }
+                        };
+
+                var deferred = $q.defer();
+                    $http.post(url, formData, headerConfig).
+                        success(function (data, status, headers, config) {
+                            deferred.resolve(data);
+                        }).
+                        error(function(data, status, headers, config) {
+                                deferred.reject([data, status, headers, config]);
+                    });
+                        return deferred.promise;
+                };            
             this.retrieveUsers = function() {
                 var deferred = $q.defer();
                 $http.get(url).

@@ -5,9 +5,26 @@ var express = require('express'),
 	path = require('path'),
 	bodyParser = require('body-parser'),
 	fController = require('./server/controller/friendzoneCtrl'),
+	multer  = require('multer'),
 	app = express();
 
+const dest = './client/images/';
+
 var server = require('./server')(app);
+
+/*
+*	Configuring multer for acessing form data and file name/upload in a specific destination.
+*/
+var storage = multer.diskStorage({
+  destination: function (req, file, cb) {
+    cb(null, dest)
+  },
+  filename: function (req, file, cb) {
+    cb(null, Date.now()+'_'+file.originalname)
+  }
+});
+
+var upload = multer({ storage: storage });
 
 /*
 *	Built-in middleware express.static for making files such as images/css/js accessable
@@ -26,12 +43,13 @@ var server = require('./server')(app);
 		  next();
 		});
 
+
 //Render landing page
 app.get('/', function(req, res){
 	res.sendFile(__dirname + '/server/landingPage.html');
 });
 app.get('/api/user.json', fController.retrieveUsers);
-app.post('/api/user.json', fController.saveUser);
+app.post('/api/user.json', upload.single('file'), fController.saveUser);
 
 /*
 *	Handling incoming http request

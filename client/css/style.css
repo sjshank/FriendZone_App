@@ -18,6 +18,11 @@ h1 {
   color: red;
   font-size: 12px;
 }
+.profileImage {
+  border-radius: 15px;
+  height: 151px;
+  width: 151px;
+}
 
 
 

@@ -11,17 +11,17 @@ angular.module('webApp')
         
         //User object initialize with default values
         $scope.user = {
-            picUrl : "images/a.png",
+            picUrl : "",
             name : "",
             rStatus : "Single",
             hobby : "",
             age : "",
             gender : "male",
-            location : {
-                state : "",
-                city : ""
-            }   
+            state : "",
+            city : ""
         };
+
+        $scope.file = "";
 
         /*
         * Initially look for local-storage. If it doesn't have userList object then it will call a http GET call to 
@@ -29,7 +29,7 @@ angular.module('webApp')
         *
         */
 
-         (function() {
+         /*(function() {
             try{
                 if(!localStorageService.get("userList")){
                     appService.getUserList().then( function(response) {
@@ -39,12 +39,12 @@ angular.module('webApp')
                     });
                 }
             }catch(e){
-                console.log("Exception occurs while setting default userList in local-storage");
+                console.log("Exception occurs while setting default userList in local-storage", e);
             }
-        })();
+        })();*/
 
         //watch function for state value to display/hide city text box
-        $scope.$watch('user.location.state', function(newValue, oldValue, scope) {
+        $scope.$watch('user.state', function(newValue, oldValue, scope) {
                if(typeof newValue !== 'undefined' && newValue !== "" && newValue !== oldValue)
                     $scope.isStatePopulated = true;
                 else
@@ -56,6 +56,7 @@ angular.module('webApp')
             if($scope.user){
                 try{
                     // Using nodejs based filestream
+                    $scope.user.file = $scope.file;
                     appNodeService.doSignup($scope.user).then( function(response){
                         if(response){
                             console.log(response);  
@@ -72,7 +73,7 @@ angular.module('webApp')
                     localStorageService.set("userList", userList);
                     $location.path("/search");*/
                 }catch(e){
-                    console.log("Exception occurs while pushing user object in userList local-storage");       
+                    console.log("Exception occurs while pushing user object in userList local-storage", e);       
                 }
             }else{
                 $scope.hasError = false;
