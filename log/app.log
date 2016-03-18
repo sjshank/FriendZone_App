@@ -1,1 +1,280 @@
 [2016-03-17 22:52:35.195] [DEBUG] index - This is in the friendzone controller module
+[2016-03-18 18:37:24.377] [DEBUG] index - This is in the friendzone controller module
+[2016-03-18 19:43:06.213] [DEBUG] app - Render landing page
+[2016-03-18 19:43:46.146] [DEBUG] firendzoneCtrl - Inside saveUser method
+[2016-03-18 19:43:46.147] [DEBUG] userFactory - set user object { picUrl: '',
+  name: 'Swati',
+  rStatus: 'Married',
+  hobby: 'Study',
+  age: '29',
+  gender: 'female',
+  state: 'Maharashtra',
+  city: 'Mumbai' }
+[2016-03-18 19:45:36.090] [DEBUG] firendzoneCtrl - Inside saveUser method
+[2016-03-18 19:45:36.091] [DEBUG] userFactory - set user object { picUrl: '',
+  name: 'Swati',
+  rStatus: 'Married',
+  hobby: 'Study',
+  age: '29',
+  gender: 'female',
+  state: 'Maharashtra',
+  city: 'Mumbai' }
+[2016-03-18 19:45:46.244] [DEBUG] app - Render landing page
+[2016-03-18 19:45:57.345] [DEBUG] firendzoneCtrl - User list retrieved
+[2016-03-18 19:46:16.063] [DEBUG] firendzoneCtrl - Inside saveUser method
+[2016-03-18 19:46:16.063] [DEBUG] userFactory - set user object { picUrl: '',
+  name: 'sss',
+  rStatus: 'Married',
+  hobby: 'aaaa',
+  age: '55',
+  gender: 'female',
+  state: 'Maharashtra',
+  city: 'Mumbai' }
+[2016-03-18 19:48:34.675] [DEBUG] firendzoneCtrl - Inside saveUser method
+[2016-03-18 19:48:34.677] [DEBUG] userFactory - set user object { picUrl: '',
+  name: 'sss',
+  rStatus: 'Married',
+  hobby: 'aaaa',
+  age: '55',
+  gender: 'female',
+  state: 'Maharashtra',
+  city: 'Mumbai' }
+[2016-03-18 19:53:13.126] [DEBUG] firendzoneCtrl - Inside saveUser method
+[2016-03-18 19:53:15.183] [DEBUG] firendzoneCtrl - User list retrieved
+[2016-03-18 19:56:52.842] [DEBUG] firendzoneCtrl - Inside saveUser method
+[2016-03-18 19:56:52.846] [DEBUG] firendzoneCtrl - Inside callback function of file write
+[2016-03-18 19:56:55.426] [DEBUG] firendzoneCtrl - User list retrieved
+[2016-03-18 19:57:52.722] [DEBUG] firendzoneCtrl - Inside saveUser method
+[2016-03-18 19:57:52.726] [DEBUG] firendzoneCtrl - Inside callback function of file write
+[2016-03-18 19:57:52.726] [DEBUG] firendzoneCtrl - File written successfully
+[2016-03-18 19:57:54.456] [DEBUG] firendzoneCtrl - User list retrieved
+[2016-03-18 19:58:18.176] [DEBUG] app - Render landing page
+[2016-03-18 19:58:21.536] [DEBUG] firendzoneCtrl - User list retrieved
+[2016-03-18 19:58:42.840] [DEBUG] firendzoneCtrl - Inside saveUser method
+[2016-03-18 19:58:42.841] [DEBUG] userFactory - set user object { picUrl: '',
+  name: 'wwqqw',
+  rStatus: 'Single',
+  hobby: 'ds',
+  age: '2',
+  gender: 'male',
+  state: 'fbv',
+  city: 'Nagpur' }
+[2016-03-18 19:59:39.073] [DEBUG] app - Render landing page
+[2016-03-18 20:00:00.443] [DEBUG] firendzoneCtrl - Inside saveUser method
+[2016-03-18 20:01:40.217] [DEBUG] firendzoneCtrl - Inside saveUser method
+[2016-03-18 20:01:40.219] [DEBUG] userFactory - set user object { picUrl: '',
+  name: 'wertfds',
+  rStatus: 'Single',
+  hobby: 'dfssdfsdf',
+  age: '33',
+  gender: 'male',
+  state: 'dfssdf',
+  city: 'dfsdf' }
+[2016-03-18 20:01:40.221] [DEBUG] userFactory - get user object { picUrl: 'images/1458311500196_Penguins.jpg',
+  name: 'wertfds',
+  rStatus: 'Single',
+  hobby: 'dfssdfsdf',
+  age: '33',
+  gender: 'male',
+  location: { state: 'dfssdf', city: 'dfsdf' } }
+[2016-03-18 20:01:40.224] [DEBUG] firendzoneCtrl - Inside callback function of file write
+[2016-03-18 20:01:40.224] [DEBUG] firendzoneCtrl - File written successfully
+[2016-03-18 20:01:42.212] [DEBUG] firendzoneCtrl - User list retrieved
+[2016-03-18 20:04:05.823] [DEBUG] app - Render landing page
+[2016-03-18 20:04:07.900] [DEBUG] firendzoneCtrl - User list retrieved
+[2016-03-18 20:04:24.020] [DEBUG] firendzoneCtrl - Inside saveUser method
+[2016-03-18 20:04:24.021] [DEBUG] userFactory - set user object { picUrl: '',
+  name: 'sdfsdsd',
+  rStatus: 'Single',
+  hobby: 'sdsds',
+  age: '5',
+  gender: 'male',
+  state: 'dsasd',
+  city: 'sdaasd' }
+[2016-03-18 20:04:24.024] [ERROR] app - unexpected error occur  [RangeError: Maximum call stack size exceeded]
+RangeError: Maximum call stack size exceeded
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:10:24)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+[2016-03-18 20:06:53.274] [DEBUG] firendzoneCtrl - Inside saveUser method
+[2016-03-18 20:06:53.276] [DEBUG] userFactory - set user object { picUrl: '',
+  name: 'sdfsdsd',
+  rStatus: 'Single',
+  hobby: 'sdsds',
+  age: '5',
+  gender: 'male',
+  state: 'dsasd',
+  city: 'sdaasd' }
+[2016-03-18 20:06:53.279] [ERROR] app - unexpected error occur  [RangeError: Maximum call stack size exceeded]
+RangeError: Maximum call stack size exceeded
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:10:24)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+[2016-03-18 20:07:28.165] [DEBUG] firendzoneCtrl - Inside saveUser method
+[2016-03-18 20:07:28.165] [DEBUG] userFactory - set user object { picUrl: '',
+  name: 'sdfsdsd',
+  rStatus: 'Single',
+  hobby: 'sdsds',
+  age: '5',
+  gender: 'male',
+  state: 'dsasd',
+  city: 'sdaasd' }
+[2016-03-18 20:07:28.166] [ERROR] app - unexpected error occur  [RangeError: Maximum call stack size exceeded]
+RangeError: Maximum call stack size exceeded
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:10:24)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+[2016-03-18 20:18:29.755] [DEBUG] app - Render landing page
+[2016-03-18 20:18:50.969] [DEBUG] app - Render landing page
+[2016-03-18 20:18:57.915] [DEBUG] app - Render landing page
+[2016-03-18 20:18:59.338] [DEBUG] app - Render landing page
+[2016-03-18 20:20:12.551] [DEBUG] app - Render landing page
+[2016-03-18 20:20:41.489] [DEBUG] firendzoneCtrl - Inside saveUser method
+[2016-03-18 20:20:41.490] [DEBUG] userFactory - set user object { picUrl: '',
+  name: 'sdsd',
+  rStatus: 'Single',
+  hobby: 'sdsdsdsd',
+  age: '33',
+  gender: 'male',
+  state: 'tttr',
+  city: 'eerer' }
+[2016-03-18 20:20:41.491] [ERROR] app - unexpected error occur  [RangeError: Maximum call stack size exceeded]
+RangeError: Maximum call stack size exceeded
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:10:24)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+[2016-03-18 20:22:04.926] [DEBUG] app - Render landing page
+[2016-03-18 20:22:18.534] [DEBUG] firendzoneCtrl - Inside saveUser method
+[2016-03-18 20:22:18.535] [DEBUG] userFactory - set user object { picUrl: '',
+  name: 'dsdsdf',
+  rStatus: 'Single',
+  hobby: 'dfdsfsdsdf',
+  age: '3',
+  gender: 'male',
+  state: 'ssdfsdf',
+  city: 'dfdsfsdf' }
+[2016-03-18 20:22:18.538] [ERROR] app - unexpected error occur  [RangeError: Maximum call stack size exceeded]
+RangeError: Maximum call stack size exceeded
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:10:24)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+[2016-03-18 20:22:38.472] [DEBUG] firendzoneCtrl - Inside saveUser method
+[2016-03-18 20:22:38.473] [DEBUG] userFactory - set user object { picUrl: '',
+  name: 'dsdsdf',
+  rStatus: 'Single',
+  hobby: 'dfdsfsdsdf',
+  age: '3',
+  gender: 'male',
+  state: 'ssdfsdf',
+  city: 'dfdsfsdf' }
+[2016-03-18 20:22:38.477] [ERROR] app - unexpected error occur  [RangeError: Maximum call stack size exceeded]
+RangeError: Maximum call stack size exceeded
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:10:24)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+[2016-03-18 20:23:09.064] [DEBUG] app - Render landing page
+[2016-03-18 20:23:23.377] [DEBUG] firendzoneCtrl - Inside saveUser method
+[2016-03-18 20:23:23.378] [DEBUG] userFactory - set user object { picUrl: '',
+  name: 'dsdsdsdsdsd',
+  rStatus: 'Single',
+  hobby: 'sdsdsdsd',
+  age: '45',
+  gender: 'male',
+  state: 'r',
+  city: 'er' }
+[2016-03-18 20:23:23.380] [ERROR] app - unexpected error occur  [RangeError: Maximum call stack size exceeded]
+RangeError: Maximum call stack size exceeded
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:10:24)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+[2016-03-18 20:24:08.108] [DEBUG] app - Render landing page
+[2016-03-18 20:24:23.846] [DEBUG] firendzoneCtrl - Inside saveUser method
+[2016-03-18 20:24:23.846] [DEBUG] userFactory - set user object { picUrl: '',
+  name: 'uyiui',
+  rStatus: 'Divorce',
+  hobby: 'iuiuui',
+  age: '7',
+  gender: 'female',
+  state: 'iui',
+  city: 'iio' }
+[2016-03-18 20:24:23.848] [ERROR] app - unexpected error occur  [RangeError: Maximum call stack size exceeded]
+RangeError: Maximum call stack size exceeded
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:10:24)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+    at getUserObject (C:\Users\ss812960\Desktop\Nodejs\New folder (2)\FriendZone_App\server\helper\userFactory.js:11:32)
+[2016-03-18 20:30:34.621] [DEBUG] app - Render landing page
+[2016-03-18 20:30:52.253] [DEBUG] firendzoneCtrl - Inside saveUser method
+[2016-03-18 20:30:52.254] [DEBUG] userFactory - set user object { picUrl: '',
+  name: 'ddssd',
+  rStatus: 'Single',
+  hobby: 'sdsdsdsd',
+  age: '44',
+  gender: 'male',
+  state: 'dfdfs',
+  city: 'dsfdsfdf' }
+[2016-03-18 20:30:52.255] [DEBUG] userFactory - get user object { picUrl: 'images/1458313252232_Govt_Photo_ID.jpg',
+  name: 'ddssd',
+  rStatus: 'Single',
+  hobby: 'sdsdsdsd',
+  age: '44',
+  gender: 'male',
+  location: { state: 'dfdfs', city: 'dsfdsfdf' } }
+[2016-03-18 20:30:52.258] [DEBUG] firendzoneCtrl - Inside callback function of file write
+[2016-03-18 20:30:52.259] [DEBUG] firendzoneCtrl - File written successfully
+[2016-03-18 20:30:53.932] [DEBUG] firendzoneCtrl - User list retrieved

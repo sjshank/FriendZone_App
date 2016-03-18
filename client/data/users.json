@@ -85,27 +85,15 @@
       }
     },
     {
-      "picUrl": "images/1458234426068_Desert.jpg",
-      "name": "Name",
+      "picUrl": "images/1458306444354_Lighthouse.jpg",
+      "name": "Guddya",
       "rStatus": "Single",
-      "hobby": "Hobby",
-      "age": "29",
-      "gender": "female",
+      "hobby": "Music",
+      "age": "26",
+      "gender": "male",
       "location": {
-        "state": "State",
-        "city": "City"
-      }
-    },
-    {
-      "picUrl": "images/1458235355172_Chrysanthemum.jpg",
-      "name": "sss",
-      "rStatus": "Divorce",
-      "hobby": "jkhji",
-      "age": "55",
-      "gender": "female",
-      "location": {
-        "state": "iuiinm",
-        "city": "jjjhuu"
+        "state": "MP",
+        "city": "Bhopal"
       }
     }
   ]

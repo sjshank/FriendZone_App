@@ -11,12 +11,12 @@ angular.module('webApp')
         (function() {
             try{
                 appNodeService.retrieveUsers().then( function(response){
-                        if(response){
+                        if(!response.errorMsg){
                             $scope.hasError = false;
                             $scope.userList = response.data;
                         }else{
                             $scope.hasError = false;
-                            $scope.errorMsg = appConstants.SERVICE_ERROR
+                            $scope.errorMsg = response.errorMsg || appConstants.SERVICE_ERROR;
                         }
                     });
 

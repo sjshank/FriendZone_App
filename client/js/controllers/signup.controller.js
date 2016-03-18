@@ -58,12 +58,12 @@ angular.module('webApp')
                     // Using nodejs based filestream
                     $scope.user.file = $scope.file;
                     appNodeService.doSignup($scope.user).then( function(response){
-                        if(response){
-                            console.log(response);  
+                        if(!response.errorMsg){
+                            $scope.hasError = false;
                             $location.path("/search"); 
                         }else{
-                            $scope.hasError = false;
-                            $scope.errorMsg = appConstants.SERVICE_ERROR
+                            $scope.hasError = true;
+                            $scope.errorMsg = response.errorMsg || appConstants.SERVICE_ERROR;
                         }
                     });
 
@@ -76,7 +76,7 @@ angular.module('webApp')
                     console.log("Exception occurs while pushing user object in userList local-storage", e);       
                 }
             }else{
-                $scope.hasError = false;
+                $scope.hasError = true;
                 $scope.errorMsg = appConstants.SERVICE_ERROR;
             }
         };

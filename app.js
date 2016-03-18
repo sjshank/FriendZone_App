@@ -51,15 +51,15 @@ var upload = multer({ storage: storage });
 
 //Render landing page
 app.get('/', function(req, res){
+	log.debug("Render landing page");
 	res.sendFile(__dirname + '/server/landingPage.html');
 });
-app.get('/api/user.json', fController.retrieveUsers);
-app.post('/api/user.json', upload.single('file'), fController.saveUser);
 
 /*
 *	Handling incoming http request
 */
-
+app.get('/api/user.json', fController.retrieveUsers);
+app.post('/api/user.json', upload.single('file'), fController.saveUser);
 
 
 /*
@@ -67,12 +67,10 @@ app.post('/api/user.json', upload.single('file'), fController.saveUser);
 */
 if (app.get('env') === 'development') {
 		  app.use(function(err, req, res, next) {
+		  	log.error("unexpected error occur ", err);
 		  	console.log(err);
 			res.status(err.status || 500);
-			res.render('error', {
-			  message: "Currently we are experiencing technical difficulties. Please try after some time.",
-			  error: err
-			});
+			res.json({errorMsg: "Currently we are experiencing technical difficulties. Please try after some time."});
 		  });
 }
 
